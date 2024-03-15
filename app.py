@@ -24,6 +24,13 @@ def finalizar_app():
     exibir_subtitulo('Encerrando o sistema')
 
 def opcao_invalida():
+    #docstring 
+    '''
+    Essa função exibe mensagem opção invalida e volta ao menu
+
+    Outputs:
+    - exibe a mensagem e retorna ao menu principal  
+    '''
     print('Opção Inválida!\n')
     voltar_menu_principal()
 
@@ -41,6 +48,16 @@ def exibir_subtitulo(texto):
     print()
 
 def cadastrar_restaurante():
+    #docstring 
+    '''
+    Essa função é responsável por cadastrar um novo restaurante
+    Inputs:
+    - nome do restaurante
+    - categoria 
+
+    Outputs:
+    - adiciona um novo restaurante e categoria a lista de restaurantes 
+    '''
     exibir_subtitulo('Cadastro de novos restaurantes')
     nome_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     nome_categoria = input(f'Digite a categoria do restaurante {nome_restaurante}: ')
